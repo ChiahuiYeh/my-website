@@ -3,10 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
+<style>
+
+</style>
 <body>
-    <h1>My website</h1>
-    Hello
+    <!-- 導覽列 -->
+    <div class="navbar">
+        <a href="#" class="logo">
+            <h1>
+                <img src="Images/logo.png" alt="">
+            </h1>
+        </a>
+        <nav class="menu">
+            <a href="#">About</a>
+            <a href="#">Works</a>
+            <a class="button-CTA" href="#">Resume</a>
+        </nav>
+    </div>
+    <!-- 橫幅 -->
+    <div class="banner">
+        <div class="banner-text">
+            <h2>Hi, I’m Chiahui Yeh🌿<br/>
+                UI/UX Designer</h2>
+            <p class="text-lg">擁有 3 年資歷 Web/APP UI/UX 設計師，並 5 年數位設計經驗。<br/>
+                熟悉網頁設計、B2B 後台系統、IoT APP 介面設計。在專門領域深入研究複雜的產業知識，為多種使用情境設計產品介面。</p>
+        </div>
+    </div>
+    <!-- 關於我 -->
+    <div class="section__resume">
+        <div class="container">
+            <div class="resume__heading">
+                <img src="Images/myphoto.png" alt="">
+                <div>
+                    <p class="text-3xl font-semibold">葉佳蕙 Chiahui Yeh</p>
+                    <p class="text-xl text-gray-dark">UI/UX設計師・UI/UX Designer</p>
+                    <p class="text-sm text-gray-dark">chiahui.ui@gmail.com</p>
+                </div>
+            </div>
+            <div class="resume__col-group">
+                <div class="resume__col">
+                    <div class="resume__title">skills</div>
+                    <div>
+                        <p class="text-sm">UI Design</p>
+                        <p class="text-sm">Wareframe</p>
+                        <p class="text-sm">Prototype</p>
+                    </div>
+                    <div class="resume__title">tools</div>
+                    <div>
+                        <p class="text-sm">Figma, Zeplin</p>
+                        <p class="text-sm">Adobe Creative Suite</p>
+                        <p class="text-sm">HTML/CSS</p>
+                        <p class="text-sm">Visual Studio Code</p>
+                        <p class="text-sm">GitHub</p>
+                    </div>
+                </div>
+                <div class="resume__col">
+                    <div class="resume__title">work experience</div>
+                    <div class="work-block">
+                        <div class="work-block__heading">
+                            <p class="text-lg">UI/UX Designer</p>
+                            <p class="text-sm font-semibold">uPBN</p>
+                            <p class="text-sm tag">2024.1 - now</p>
+                        </div>
+                        <div class="work-block__content">
+                            <p class="text-base">與後端工程師開發合作、領域專家共事經驗</p>
+                            <p class="text-base">前期研究與訪談，定義目標與任務</p>
+                            <p class="text-base">根據需求產出 Hi-Fi 設計稿、Prototype、Mockup</p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
 </body>
 </html>
