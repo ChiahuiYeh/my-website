@@ -105,12 +105,19 @@ body {
 }
 
 .navbar {
-    padding: 0 120px;
+    padding: 20px 120px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: #fff;
 }
+
+@media screen and (max-width:768px) {
+    .navbar {
+        padding: 20px 40px;
+    }
+}
+
 .menu a {
     text-decoration: none;
     color: #000;
@@ -137,6 +144,19 @@ body {
     display: flex;
     align-items: center;
 }
+
+@media screen and (max-width:1024px) {
+    .banner {
+        padding: 20px 40px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .banner {
+        padding: 20px 40px;
+    }
+}
+
 .banner-text {
     margin: auto 0;
     h2 {
@@ -149,12 +169,42 @@ body {
 }
 .section__resume {
     padding: 40px  120px;
-    .container {
-        padding: 40px 80px;
-        max-width: 1000px;
-        border-radius: 40px;
-        background: #fff;
-        
+}
+
+@media screen and (max-width:1024px) {
+    .section__resume {
+        padding: 20px 40px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .section__resume {
+        padding: 40px 40px;
+    }
+}
+
+.container__resume {
+    padding: 40px 80px;
+    max-width: 1000px;
+    border-radius: 40px;
+    background: #fff;   
+}
+
+@media screen and (max-width:1024px) {
+    .container__resume {
+        padding: 40px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .container__resume {
+        padding: 40px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .container__resume {
+        padding: 40px;
     }
 }
 
@@ -162,11 +212,21 @@ body {
     display: flex;
     align-items: center;
     gap: 32px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     img {
-        border-radius: 40px;
-        width: 30%;
+        border-radius: 20px;
+        width: 50%;
         max-width: 320px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .resume__heading {
+        flex-direction: column;
+        align-items: flex-start;
+        img {
+            width: 100%;
+        }
     }
 }
 
@@ -187,16 +247,33 @@ body {
     gap: 32px;
 }
 
-.work-block {
-    display: flex;
-    gap: 20px;
+@media screen and (max-width:768px) {
+    .resume__col-group {
+        display: flex;
+        flex-direction: column-reverse;
+        grid-template-columns: 1fr;    
+    }
 }
+
+.work-block {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 20px 0;
+}
+
+@media screen and (max-width:768px) {
+    .work-block {
+        flex-direction: column;
+    }
+}
+
 .work-block__heading {
     width: 150px;
-    .tag {
-        display: inline-block;
-        color: var(--black-50);
-        padding: 4px 6px;
-        background: rgb(51, 51, 51, .08);
-    }
+}
+
+.tag {
+    display: inline-block;
+    color: var(--black-50);
+    padding: 4px 6px;
+    background: rgb(51, 51, 51, .08);
 }
