@@ -239,13 +239,21 @@ header {
 }
 
 .banner-text {
-    margin: auto 0;
+    margin-top: 80px;
     h2 {
         font-family: "Afacad", sans-serif;
         /* font-style: italic; */
-        font-size: 52px;
+        font-size: 48px;
         line-height: 2.8rem;
         margin: 10px 0;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .banner-text {
+        h2 {
+            font-size: 42px;
+        }
     }
 }
 
@@ -269,7 +277,6 @@ header {
         flex-direction: column;
     }
 }
-
 
 
 .works__card {
