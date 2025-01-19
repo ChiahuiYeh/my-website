@@ -16,17 +16,20 @@
 <body>
     <header>
         <!-- 導覽列 -->
-        <div class="navbar">
+        <nav class="navbar">
             <a href="https://chiahuiyeh.github.io/my-website/" class="logo">
                 <h1>
                     <img src="Images/Logo.png" alt="">
                 </h1>
             </a>
-            <nav class="menu">
-                <a href="#works">工作專案</a>
-                <a class="button-CTA" href="#resume">我的履歷</a>
-            </nav>
-        </div>
+            <button class="nav-drawer" id="nav-drawer">
+                ☰
+            </button>
+            <ul class="nav-list" id="nav-list">
+                <li><a href="#works">工作專案</a></li>
+                <li><a class="button-CTA" href="#resume">我的履歷</a></li>
+            </ul>
+        </nav>
         <!-- 橫幅 -->
         <div class="banner">
             <div class="banner-text">
@@ -190,9 +193,11 @@
     </div>
 
     <!-- 頁尾 -->
-    <footer>
-
+    <footer class="section">
+        <p class="paragraph-6 copyright-text">Chiahui Yeh 2025 Copyright. All Rights Reserved.</p>
     </footer>
     
 </body>
+<script src="script.js" defer></script>
+
 </html>
